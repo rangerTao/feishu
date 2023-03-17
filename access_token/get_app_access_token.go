@@ -6,7 +6,7 @@ import (
 	"github.com/go-zoox/fetch"
 )
 
-const appAccessTokenURI = "https://open.feishu.cn/open-apis/auth/v3/app_access_token/internal"
+const appAccessTokenURI = "https://open.f.mioffice.cn/open-apis/auth/v3/app_access_token/internal"
 
 func GetAppAccessToken(appID, appSecret string) (string, error) {
 	response, err := fetch.Post(appAccessTokenURI, &fetch.Config{

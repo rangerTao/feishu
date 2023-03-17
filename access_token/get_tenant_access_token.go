@@ -6,7 +6,7 @@ import (
 	"github.com/go-zoox/fetch"
 )
 
-const tenantAccessTokenURI = "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal"
+const tenantAccessTokenURI = "https://open.f.mioffice.cn/open-apis/auth/v3/tenant_access_token/internal"
 
 func GetTenantAccessToken(appID, appSecret string) (string, error) {
 	response, err := fetch.Post(tenantAccessTokenURI, &fetch.Config{

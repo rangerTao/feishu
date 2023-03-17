@@ -21,7 +21,7 @@ type Config struct {
 
 func New(cfg *Config) Client {
 	if cfg.BaseURI == "" {
-		cfg.BaseURI = "https://open.feishu.cn"
+		cfg.BaseURI = "https://open.f.mioffice.cn"
 	}
 
 	return &client{
